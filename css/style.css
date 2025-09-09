@@ -1,4 +1,4 @@
-﻿/* Reset */
+/* =============== RESET GLOBAL =============== */
 * {
   margin: 0;
   padding: 0;
@@ -6,106 +6,205 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
-  background: #f5f5f5;
-  color: #111;
+  font-family: 'Poppins', sans-serif;
+  background: #f4f4f9;
+  color: #222;
+  line-height: 1.6;
   text-align: center;
 }
 
-/* Hero */
-.hero {
-  background: url('../img/THE SINGERS.png') no-repeat center center/cover;
+/* =============== BANNER =============== */
+#banner {
   height: 300px;
+  background: url('../img/banner.jpg') no-repeat center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 }
 
-.hero .overlay {
-  background: rgba(0,0,0,0.5);
-  padding: 20px;
+#banner .titulo-banner {
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+  background: rgba(0,0,0,0.4);
+  padding: 10px 20px;
   border-radius: 10px;
 }
 
-.hero h1 {
-  font-family: 'Permanent Marker', cursive;
-  font-size: 3rem;
-  color: #e50914;
-  text-shadow: 2px 2px 10px #000;
+/* =============== CONTADOR =============== */
+#contador {
+  margin: 40px auto;
+  font-size: 1.4rem;
+  color: #444;
 }
 
-.hero h2 {
-  color: #fff;
-  margin-bottom: 10px;
+#contador h2 {
   font-weight: 600;
 }
 
-/* Contador */
-.contador {
-  background: #fff;
-  padding: 20px;
-  margin: 20px auto;
-  width: 90%;
-  max-width: 500px;
-  border: 2px solid #000;
-  font-family: 'Permanent Marker', cursive;
-}
-
-.contador h3 {
-  color: #a020f0;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
 #timer {
-  font-size: 1.3rem;
+  color: #e63946;
   font-weight: bold;
 }
 
-/* WhatsApp */
-.contato {
-  margin: 30px 0;
+/* =============== ESPIA AÍ =============== */
+#espia-ai {
+  padding: 40px 20px;
 }
 
-.whatsapp {
+#espia-ai h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #1d3557;
+}
+
+.molduras {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
+  gap: 20px;
+}
+
+.moldura {
+  width: 120px;
+  height: 150px;
+  background: #ddd;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transform: rotate(-3deg);
+  transition: transform 0.3s ease;
+}
+
+.moldura:nth-child(2n) {
+  transform: rotate(4deg);
+}
+
+.moldura:hover {
+  transform: scale(1.05) rotate(0deg);
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 24px;
+  background: #1d3557;
+  color: #fff;
   text-decoration: none;
-  color: #a020f0;
-  font-family: 'Permanent Marker', cursive;
-  font-size: 1.5rem;
-}
-
-.whatsapp img {
-  width: 50px;
-  height: 50px;
-}
-
-/* Roteiro */
-.roteiro {
-  margin: 40px auto;
-  padding: 20px;
-  width: 90%;
-  max-width: 600px;
-  background: #fff;
   border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
 }
 
-.roteiro h3 {
-  font-family: 'Permanent Marker', cursive;
-  color: #a020f0;
-  margin-bottom: 15px;
+.btn:hover {
+  background: #457b9d;
+  transform: scale(1.05);
 }
 
-.roteiro ul {
-  list-style: none;
+/* =============== ROTEIRO =============== */
+#roteiro {
+  padding: 40px 20px;
+  background: #fff;
+  border-top: 3px solid #1d3557;
+  border-bottom: 3px solid #1d3557;
 }
 
-.roteiro li {
-  margin: 10px 0;
-  font-size: 1rem;
+#roteiro h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1d3557;
+}
+
+.conteudo-roteiro {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* =============== SALVAR =============== */
+#salvar {
+  margin: 40px 0;
+}
+
+.btn-salvar {
+  background: #e63946;
+}
+
+.btn-salvar:hover {
+  background: #ff6b6b;
+}
+
+/* =============== LOCALIZAÇÃO =============== */
+#localizacao {
+  padding: 40px 20px;
+}
+
+#localizacao h2 {
+  font-size: 2rem;
+  color: #1d3557;
+}
+
+#localizacao .endereco {
+  margin: 10px 0 20px;
+  font-weight: bold;
+  color: #444;
+}
+
+#localizacao .mapa iframe {
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* =============== OUTROS =============== */
+#outros {
+  padding: 40px 20px;
+  background: #f1f1f1;
+}
+
+#outros h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1d3557;
+}
+
+.botoes-outros {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.btn-outros {
+  background: #1d3557;
+}
+
+.btn-outros:hover {
+  background: #457b9d;
+}
+
+/* =============== VOLTAR AO TOPO =============== */
+#voltar-topo {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #1d3557;
+  color: #fff;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: none; /* Só aparece no scroll com JS */
+  transition: background 0.3s;
+}
+
+#voltar-topo:hover {
+  background: #457b9d;
+}
+
+/* =============== RODAPÉ =============== */
+#rodape {
+  margin-top: 50px;
+  padding: 20px;
+  background: #1d3557;
+  color: #fff;
+  font-size: 0.9rem;
 }
