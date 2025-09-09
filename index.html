@@ -1,48 +1,78 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Singers - Evento</title>
-  <link rel="stylesheet" href="css/style.css">
-  <!-- Fonte parecida com a do design -->
-  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Hero -->
-  <header class="hero">
-    <div class="overlay">
-      <h2>CM Colégio Modelo</h2>
-      <h1>THE SINGERS</h1>
-    </div>
+  <!-- Banner -->
+  <header id="banner">
+    <!-- Aqui você vai colocar a imagem do teatro como background via CSS -->
+    <h1>The Singers</h1>
   </header>
 
   <!-- Contagem regressiva -->
-  <section class="contador">
-    <h3>FALTAM...</h3>
-    <div id="timer">99d 3h 25m 27s</div>
+  <section id="contador">
+    <h2>Faltam <span id="timer">XXd XXh XXm XXs</span> para o nosso evento</h2>
   </section>
 
-  <!-- Botão WhatsApp -->
-  <section class="contato">
-    <a href="https://wa.me/5599999999999" target="_blank" class="whatsapp">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-      <span>FALE CONOSCO</span>
-    </a>
+  <!-- Espia Aí -->
+  <section id="espia-ai">
+    <h2>Espia aí 👀</h2>
+    <div class="molduras">
+      <!-- Molduras para fotos (posição aleatória no CSS) -->
+      <div class="moldura">Imagem 1</div>
+      <div class="moldura">Imagem 2</div>
+      <div class="moldura">Imagem 3</div>
+      <div class="moldura">Imagem 4</div>
+      <div class="moldura">Imagem 5</div>
+    </div>
+    <a href="#" class="btn">Ver mais fotos</a>
   </section>
 
   <!-- Roteiro -->
-  <section class="roteiro">
-    <h3>ROTEIRO DO NOSSO INCRÍVEL DIA</h3>
-    <ul>
-      <li>19:00 - Abertura</li>
-      <li>20:00 - The Singers no palco</li>
-      <li>22:00 - Intervalo</li>
-      <li>22:30 - Surpresa especial</li>
-      <li>00:00 - Encerramento</li>
-    </ul>
+  <section id="roteiro">
+    <h2>Nosso Roteiro</h2>
+    <div class="conteudo-roteiro">
+      <!-- Aqui você vai editar o roteiro depois -->
+    </div>
   </section>
+
+  <!-- Botão Salvar -->
+  <section id="salvar">
+    <button class="btn">Salva aí 📅</button>
+  </section>
+
+  <!-- Localização -->
+  <section id="localizacao">
+    <h2>📍 Local do Evento</h2>
+    <p>Endereço aqui...</p>
+    <div class="mapa">
+      <!-- Google Maps embed aqui -->
+      <iframe src="" width="100%" height="250" style="border:0;" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <!-- Outros -->
+  <section id="outros">
+    <h2>Outros</h2>
+    <div class="botoes-outros">
+      <a href="#" class="btn">📄 Regras</a>
+      <a href="#" class="btn">ℹ️ Descrição</a>
+      <a href="https://wa.me/seunumerodetelefone" target="_blank" class="btn">📲 Contato</a>
+      <a href="#" class="btn">🎁 Surpresa</a>
+    </div>
+  </section>
+
+  <!-- Voltar ao topo -->
+  <button id="voltar-topo">⬆ Voltar ao topo</button>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>© 2025 C.M. Colégio Modelo - Todos os direitos reservados</p>
+  </footer>
 
 </body>
 </html>
